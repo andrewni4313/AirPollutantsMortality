@@ -1,0 +1,13 @@
+---
+title: "Data Cleaning"
+output: html_notebook
+---
+
+#Load Data
+
+```{r}
+RespDiseases <- read.table('Data/12 Leading Cause of Death Diseases/Chronic lower respiratory diseases Death 1999-2020.txt', sep='\t', header=T)
+RespDiseases$Notes <- NULL
+
+```
+
