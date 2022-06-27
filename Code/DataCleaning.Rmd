@@ -1,13 +1,169 @@
 ---
-title: "Data Cleaning"
+title: 'Data Cleaning'
 output: html_notebook
 ---
 
-#Load Data
+# Load Data
 
 ```{r}
-RespDiseases <- read.table('Data/12 Leading Cause of Death Diseases/Chronic lower respiratory diseases Death 1999-2020.txt', sep='\t', header=T)
-RespDiseases$Notes <- NULL
+# Packages
+library(plyr)
+library(dplyr)
+library(data.table)
+library(rqdatatable)
 
+
+# Reference Data
+Fips <- read.table('Data/fips2county.txt', sep='\t', quote = "", check.names=FALSE, header=T)
+
+
+# Full Data Frame Template
+Template <- data.frame(FIPS = Fips$CountyFIPS, State = Fips$StateName, County = Fips$CountyName)
+
+# Add Longitude and Latitude Data
+LatLong <- read.csv('Data/Other/Latitude and Longitude.csv', header=T, check.names=FALSE)
+LatLong <- LatLong[c('county_fips', 'lat', 'lng')]
+colnames(LatLong) <- c('FIPS', 'Latitude', 'Longitude')
+Template <- natural_join(Template, LatLong, by='FIPS', jointype='LEFT')
+
+# Multiply rows to 20 years (1999-2022)
+Template <- do.call('rbind.data.frame', lapply(1999:2020, function(i) {cbind(Template, Year=i)}))
+rownames(Template) <- do.call(paste,c(Template[c('FIPS','Year')],sep='_')) #rename indexes
+Template <- cbind(Index = rownames(Template), Template)
+
+Template #view
+
+```
+
+```{r}
+# Mortality Data
+DiseaseDeaths <- lapply(list.files('Data/12 Leading Cause of Death Diseases/', pattern='*.txt', full.names=TRUE), read.table, sep='\t', header=T, check.names=FALSE)
+names(DiseaseDeaths) <- list.files('Data/12 Leading Cause of Death Diseases/', pattern='*.txt')
+names(DiseaseDeaths) <- lapply(names(DiseaseDeaths), function(x) {paste0(gsub(' 1999.*','',x), 's')}) #rename indexes
+
+for (i in seq_along(DiseaseDeaths)){ 
+    rownames(DiseaseDeaths[[i]]) <- do.call(paste,c(DiseaseDeaths[[i]][c('County Code','Year')],sep='_'))
+    DiseaseDeaths[[i]] <- cbind(Index = rownames(DiseaseDeaths[[i]]), DiseaseDeaths[[i]])
+    DiseaseDeaths[[i]] <- DiseaseDeaths[[i]][,c('Index', 'Deaths', 'Population', 'Year')]
+    colnames(DiseaseDeaths[[i]])[2] <- names(DiseaseDeaths)[i]
+    colnames(DiseaseDeaths[[i]])[4] <- 'FIPS'
+} 
+
+DiseaseDeaths <- Reduce(function(df1, df2) natural_join(df1, df2, by='Index', jointype='FULL'), DiseaseDeaths)
+rownames(DiseaseDeaths) <- DiseaseDeaths$Index
+
+DiseaseDeaths #view
+
+```
+
+```{r}
+# Air Pollutants Data
+PollutantConcs <- lapply(list.files('Data/EPA Pollutants Data/Concentration/', pattern='*.csv', full.names=TRUE), read.table, sep=',', header=T, check.names=FALSE)
+names(PollutantConcs) <- list.files('Data/EPA Pollutants Data/Concentration/', pattern='*.csv')
+PollutantConcs <- do.call('rbind', PollutantConcs) #merge all years
+
+PollutantConcs$`State Code` <- as.numeric(PollutantConcs$`State Code`)
+PollutantConcs$`County Code` <- sprintf('%03d', PollutantConcs$`County Code`)
+PollutantConcs$FIPS <- paste0(PollutantConcs$`State Code`, PollutantConcs$`County Code`) #create fips code
+
+PollutantConcs <- split(PollutantConcs, f = PollutantConcs$`Pollutant Standard`) #split by pollutant
+PollutantConcs <- PollutantConcs[order(sapply(PollutantConcs,nrow),decreasing = T)] #sort by most rows
+PollutantConcs <- PollutantConcs[c('Ozone 8-hour 2015', 'NO2 1-hour 2010', 'NO2 Annual 1971', 'CO 8-hour 1971', 'CO 1-hour 1971', 'SO2 1-hour 2010', 'SO2 3-hour 1971', 'Lead 3-Month 2009', 'PM25 Annual 2012', 'PM25 24-hour 2012', 'PM10 24-hour 2006')]
+
+for (i in seq_along(PollutantConcs)){ 
+    PollutantConcs[[i]] <- cbind(Index = do.call(paste,c(PollutantConcs[[i]][c('FIPS','Year')],sep='_')), PollutantConcs[[i]])
+    PollutantConcs[[i]] <- PollutantConcs[[i]][,c('Index', 'Arithmetic Mean', 'FIPS', 'Year')]
+    colnames(PollutantConcs[[i]])[2] <- names(PollutantConcs)[i]
+    PollutantConcs[[i]] <- aggregate(as.formula(paste0('`', names(PollutantConcs)[i], '`~Index+FIPS+Year')), PollutantConcs[[i]], FUN=mean) #average years with multiple samples
+} 
+
+PollutantConcs <- Reduce(function(df1, df2) natural_join(df1, df2, by='Index', jointype='FULL'), PollutantConcs)
+rownames(PollutantConcs) <- PollutantConcs$Index
+
+PollutantConcs #view
+
+```
+
+
+```{r}
+# Demographic Data
+DemographicData <- lapply(list.files('Data/Demographic Data/', pattern='*.csv', full.names=TRUE), read.csv, sep=',', header=T, check.names=FALSE)
+names(DemographicData) <- list.files('Data/Demographic Data/', pattern='*.csv')
+
+```
+
+
+```{r}
+# Final Merge
+FinalDF <- natural_join(Template, DiseaseDeaths, by='Index', jointype='LEFT')
+FinalDF <- natural_join(FinalDF, PollutantConcs, by='Index', jointype='LEFT')
+FinalDF <- FinalDF %>% relocate(Index, FIPS, Year, State, County, Population, Latitude, Longitude)
+
+FinalDF$FIPS <- as.character(sprintf("%05d", FinalDF$FIPS)) #add 0s (remove or don't)
+
+FinalDF #view
+
+```
+
+```{r}
+# Save
+write.csv(FinalDF,"Results/AllData.csv", row.names = FALSE)
+summary(FinalDF)
+
+```
+
+# Visualization
+
+```{r}
+# Packages
+library(tidyverse)
+library(urbnmapr)
+library(urbnthemes)
+library(ggplot2)
+library(scales)
+
+colnames(counties)[7] <- 'FIPS'
+counties$FIPS <- as.integer(counties$FIPS)
+  
+FinalDF %>%
+  left_join(counties, by = 'FIPS') %>%
+  filter(Year == 2020) %>% 
+  ggplot(aes(long, lat, group = group, fill = `Malignant neoplasms (cancer) Deaths`)) +
+    geom_polygon(color = NA) +
+    geom_polygon(data = states, mapping = aes(long, lat, group = group),
+                 fill = NA, color = "#ffffff") +
+    coord_map(projection = 'albers', lat0 = 39, lat1 = 45) +
+    labs(fill = 'Malignant neoplasms (cancer) Deaths') 
+
+```
+
+
+# Regression
+```{r}
+# Packages
+library(lme4)
+
+#Test
+NegBiomRegress <- glmer.nb(`Chronic lower respiratory diseases Deaths` ~ `PM25 Annual 2012` + (1|State) + offset(log(Population)), data=FinalDF, na.action=na.omit)
+
+summary(NegBiomRegress)
+
+#plot
+par(mfrow=c(2,2))  
+plot(NegBiomRegress)
+
+```
+
+```{r}
+
+NegBiomRegress <- glmer.nb(Deaths ~ mean_pm25 + factor(popdensity)
+                                    + scale(poverty) + scale(log(medianhousevalue))
+                                    + scale(log(medhouseholdincome)) + scale(pct_owner_occ) 
+                                    + scale(education) + scale(pct_blk) + scale(hispanic)
+                                    + scale(older_pecent) + scale(prime_pecent) + scale(mid_pecent) 
+                                    + scale(obese) + scale(smoke)
+                                    + scale(mean_summer_temp) + scale(mean_winter_temp)
+                                    + (1|state)
+                                    + offset(log(population)), data=FullData)
 ```
 
