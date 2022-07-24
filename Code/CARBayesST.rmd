@@ -1,0 +1,263 @@
+---
+title: "CARBayesST Model"
+output: html_notebook
+---
+
+# Load Data
+
+```{r}
+# Packages
+library(plyr)
+library(dplyr)
+library(data.table)
+library(rqdatatable)
+
+# Packages
+library(CARBayesST) # for the analysis
+library(haven) # to load the SPSS .sav file
+library(tidyverse) # needed for data manipulation.
+library(RColorBrewer) # needed for some extra colours in one of the graphs
+library(lmerTest)# to get p-value estimations that are not part of the standard lme4 packages
+
+# Reference Data
+FinalDF <- read.csv('Results/AllData.csv', check.names=FALSE, header=T, row.names=1)
+
+# test using CO 8-hour 1971 --- Influenza and pneumonia (J09-J18) Deaths
+
+```
+
+```{r}
+#Wrangle Data
+FinalDF <- subset(FinalDF, Year >= 2010)
+FinalDF <- subset(FinalDF, Year <= 2019)
+  
+FinalDF <- subset(FinalDF, State != "Alaska") # prevent islands???
+FinalDF <- subset(FinalDF, State != "Hawaii")
+FinalDF <- subset(FinalDF, FIPS != 25007)
+FinalDF <- subset(FinalDF, FIPS != 53055)
+FinalDF <- subset(FinalDF, FIPS != 25019)
+
+FinalDF$FIPS <- as.character(sprintf("%05d", FinalDF$FIPS)) #add 0s (remove or don't)
+
+FinalDF$State <- as.factor(FinalDF$State)
+FinalDF$FIPS <- as.factor(FinalDF$FIPS)
+
+#FinalDF$q_popdensity <- ntile(FinalDF$population_density, 5) #make quintiles
+
+print(paste(shQuote(colnames(FinalDF[9:28])), collapse=", "))
+print(paste(shQuote(colnames(FinalDF[29:39])), collapse=", "))
+
+combos <- expand.grid(colnames(FinalDF[21:31]), colnames(FinalDF[9:20]))
+
+```
+```{r}
+library(rgdal)
+county_map <- readOGR(dsn = "Data/Other/County/cb_2018_us_county_500k.shp")
+county_map$FIPS <- paste0(county_map$STATEFP, county_map$COUNTYFP)
+averageFlu <- summarize(group_by(FinalDF, FIPS), Flu = mean(`Influenza and pneumonia (J09-J18) Deaths`/Population, na.rm=T))
+
+```
+
+```{r}
+library(leaflet)
+averageFlu.County <- merge(x=county_map, y=averageFlu, by.y="FIPS", all.x=FALSE)
+averageFlu.County.ll <- spTransform(averageFlu.County, CRS("+proj=longlat +datum=WGS84 +no_defs"))
+variable <- averageFlu.County.ll@data$Flu
+colours <- colorNumeric(palette = "YlOrBr", domain = variable, reverse=FALSE)
+leaflet(data=averageFlu.County.ll) %>%
+addTiles() %>%
+addPolygons(fillColor =  colours(variable), color="", fillOpacity = 0.7,
+weight = 1, smoothFactor = 0.5, opacity = 1.0) %>%
+addLegend(pal = colours, values = variable, opacity = 1, title="Flu") %>%
+addScaleBar(position="bottomleft")
+
+```
+
+# Formula
+
+```{r}
+# Full Formula
+formula1 = formula(`Influenza and pneumonia (J09-J18) Deaths` ~ `CO 8-hour 1971` + offset(log(Population)))
+
+formula2 = formula(`Influenza and pneumonia (J09-J18) Deaths` ~ `CO 8-hour 1971` 
+                                + scale(`Poverty Percent, All Ages`) + scale(`% Single-Parent Households`) + scale(`Income Ratio`)
+                                + scale(`High School Grad Rate`) + scale(`PCP Rate`)
+                                + scale(`% Some College Education`) + scale(`% Unemployed`) 
+                                + scale(`% Uninsured`) + scale(`% Children in Poverty`)
+                                + scale(`% African American`) + scale(`% Asian`) + scale(`% Hispanic`)
+                                + scale(`% Female`) + scale(`% Rural`) + scale(`% Not Proficient in English`)
+                                + scale(`% Age < 18`) + scale(`% Age 65 and over`)
+                                + scale(`% LBW`) + scale(`% Obese`) + scale(`% Smokers`)
+                                + scale(`% Physically Inactive`) + scale(`% Excessive Drinking`)
+                                + scale(`Median Household Income`) + scale(`% high housing costs`)
+                                + scale(summer_tmmx) + scale(winter_tmmx) 
+                                + scale(summer_rmax) + scale(winter_rmax)
+                                + factor(Year)
+                                    + (1 | FIPS:State) + (1 | State)
+                                    + offset(log(Population)))
+
+```
+
+# Poisson Regression
+
+```{r}
+model1 <- glm(formula=formula1, family="poisson", data=FinalDF, na.action=na.omit)
+round(cbind(model1$coefficients, confint(model1)),4)
+
+```
+
+```{r}
+FinalDF$residuals <- residuals(model1)[row.names(FinalDF)]
+residuals2010 <- filter(FinalDF, Year==2010)
+residuals2010.county <- merge(x=county_map, y=residuals2010, by.y="FIPS", all.x=FALSE)
+
+```   
+
+```{r}
+library(spdep)
+W.nb <- poly2nb(residuals2010.county, row.names = residuals2010.county@data$FIPS)
+W <- nb2mat(W.nb, style = "B") #something wrong
+W.list <- nb2listw(W.nb, style = "B")
+
+```
+
+```{r}
+# from online instead
+#W <- read.csv("Data/Other/countyadj.csv", row.names=1, check.names=F)
+#Fips <- read.table('Data/fips2county.txt', sep='\t', quote = "", check.names=FALSE, header=T)
+#Fips$name <- paste(Fips$CountyName, "County", Fips$StateAbbr)
+#row.names(Fips) <- Fips$name
+
+#temp <- Fips[colnames(W),]
+
+```
+
+```{r}
+moran.mc(x = residuals2010.county$residuals, listw = W.list, nsim = 10000, zero.policy = TRUE,  na.action=na.omit)
+  
+```
+
+
+# ST Regression
+
+
+
+```{r}
+lookup <- data.frame(FIPS=residuals2010.county@data$FIPS,
+spatialorder=1:nrow(residuals2010.county@data))
+
+FinalDF.temp <- merge(x=FinalDF, y=lookup, by="FIPS")
+FinalDF.ordered <- arrange(FinalDF.temp, Year, spatialorder)
+
+FinalDF.ordered <- FinalDF.ordered[c('FIPS', 'Year', 'State', 'County', 'Population', 'Latitude',
+       'Longitude', 
+       "Influenza and pneumonia (J09-J18) Deaths", 'CO 8-hour 1971')]
+
+FinalDF.ordered <- na.omit(FinalDF.ordered)
+
+```
+
+```{r}
+#regression
+library(CARBayesST)
+chain1 <- ST.CARar(formula=formula1, family="poisson",
+data=FinalDF.ordered, W=W, burnin=200000, n.sample=2200000, thin=1000, verbose=FALSE, AR=1)
+chain2 <- ST.CARar(formula=formula1, family="poisson",
+data=FinalDF.ordered, W=W, burnin=200000, n.sample=2200000, thin=1000, verbose=FALSE, AR=1)
+chain3 <- ST.CARar(formula=formula1, family="poisson",
+data=FinalDF.ordered, W=W, burnin=200000, n.sample=2200000, thin=1000, verbose=FALSE, AR=1)
+
+```
+
+# Results
+
+```{r}
+library(coda)
+beta.samples <- mcmc.list(chain1$samples$beta, chain2$samples$beta, chain3$samples$beta)
+plot(beta.samples)
+
+```
+
+```{r}
+gelman.diag(beta.samples)
+
+```
+
+```{r}
+print(chain1)
+
+```
+
+```{r}
+beta.samples.combined <- rbind(chain1$samples$beta[ ,2:3], chain2$samples$beta[ ,2:3],
+chain3$samples$beta[ ,2:3])
+round(quantile(exp(sd(FinalDF.ordered$PM25) * beta.samples.combined[ ,1]), c(0.5, 0.025, 0.975)),3)
+
+```
+
+```{r}
+fitted.samples.combined <- rbind(chain1$samples$fitted, chain2$samples$fitted, chain3$samples$fitted)
+n.samples <- nrow(fitted.samples.combined)
+n.all <- ncol(fitted.samples.combined)
+risk.samples.combined <- fitted.samples.combined / matrix(rep(FinalDF.ordered$E, n.samples), nrow=n.samples, ncol=n.all, byrow=TRUE)
+
+```
+
+
+```{r}
+round(quantile(exp(sd(FinalDF.ordered$IMD) * beta.samples.combined[ ,2]), c(0.5, 0.025, 0.975)),3)
+
+```
+
+```{r}
+N <- length(table(FinalDF.ordered$Year))
+risk.trends <- array(NA, c(n.samples, N))
+for(i in 1:n.samples) {
+  risk.trends[i, ] <- tapply(risk.samples.combined[i, ], FinalDF.ordered$Year, mean)
+}
+
+```
+
+```{r}
+time.trends <- as.data.frame(t(apply(risk.trends, 2, quantile, c(0.5, 0.025, 0.975))))
+time.trends <- time.trends %>% mutate(Year=names(table(FinalDF.ordered$Year)))
+colnames(time.trends)[1:3] <- c("Median","LCI", "UCI")
+
+```
+
+
+```{r}
+ggplot(time.trends, aes(x = factor(Year), y = Median, group=1)) +
+geom_line(col="red") +
+geom_line(aes(x=factor(Year), y=LCI), col="red", lty=2) +
+geom_line(aes(x=factor(Year), y=UCI), col="red", lty=2) +
+scale_x_discrete(name = "Year") +
+scale_y_continuous(name = "Risk") +
+theme(text=element_text(size=16), plot.title=element_text(size=18, face="bold"))
+
+```
+
+```{r}
+risk.samples.2010 <- risk.samples.combined[ ,FinalDF.ordered$Year==2010]
+risk.2010 <- apply(risk.samples.2010, 2, median)
+pep.2010 <- apply(risk.samples.2010 > 1, 2, mean)
+
+```
+
+
+```{r}
+residuals2010.LA$risk.2010 <- risk.2010
+residuals2010.LA$pep.2010 <- pep.2010
+
+```
+
+```{r}
+risk.median <- apply(risk.samples.combined, 2, median)
+inequality <- tapply(risk.median, FinalDF.ordered$Year, IQR)
+
+```
+
+
+
+
+
