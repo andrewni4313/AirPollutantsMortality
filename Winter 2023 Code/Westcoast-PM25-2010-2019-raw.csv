@@ -1,0 +1,1048 @@
+"FIPS","Year","STATE","COUNTY","PM2_5GE_Threshold","PM2_5GT35LE50","PM2_5GT50"
+"41001",2019,"Oregon","Baker",0,0,0
+"41003",2019,"Oregon","Benton",0,0,0
+"41005",2019,"Oregon","Clackamas",0,0,0
+"41009",2019,"Oregon","Columbia",0,0,0
+"41011",2019,"Oregon","Coos",0,0,0
+"41013",2019,"Oregon","Crook",1,1,0
+"41017",2019,"Oregon","Deschutes",1,1,0
+"41019",2019,"Oregon","Douglas",0,0,0
+"41023",2019,"Oregon","Grant",1,1,0
+"41025",2019,"Oregon","Harney",1,1,0
+"41029",2019,"Oregon","Jackson",4,1,3
+"41031",2019,"Oregon","Jefferson",2,2,0
+"41033",2019,"Oregon","Josephine",4,2,2
+"41035",2019,"Oregon","Klamath",0,0,0
+"41037",2019,"Oregon","Lake",0,0,0
+"41039",2019,"Oregon","Lane",0,0,0
+"41043",2019,"Oregon","Linn",0,0,0
+"41047",2019,"Oregon","Marion",0,0,0
+"41051",2019,"Oregon","Multnomah",0,0,0
+"41059",2019,"Oregon","Umatilla",1,1,0
+"41061",2019,"Oregon","Union",0,0,0
+"41063",2019,"Oregon","Wallowa",0,0,0
+"41065",2019,"Oregon","Wasco",0,0,0
+"41067",2019,"Oregon","Washington",0,0,0
+"41001",2018,"Oregon","Baker",2,1,1
+"41003",2018,"Oregon","Benton",2,2,0
+"41005",2018,"Oregon","Clackamas",4,2,2
+"41009",2018,"Oregon","Columbia",5,5,0
+"41013",2018,"Oregon","Crook",6,3,3
+"41017",2018,"Oregon","Deschutes",12,8,4
+"41019",2018,"Oregon","Douglas",2,2,0
+"41023",2018,"Oregon","Grant",3,1,2
+"41025",2018,"Oregon","Harney",4,2,2
+"41029",2018,"Oregon","Jackson",38,12,26
+"41031",2018,"Oregon","Jefferson",7,5,2
+"41033",2018,"Oregon","Josephine",29,12,17
+"41035",2018,"Oregon","Klamath",39,10,29
+"41037",2018,"Oregon","Lake",22,12,10
+"41039",2018,"Oregon","Lane",1,1,0
+"41043",2018,"Oregon","Linn",1,1,0
+"41047",2018,"Oregon","Marion",6,6,0
+"41051",2018,"Oregon","Multnomah",6,5,1
+"41059",2018,"Oregon","Umatilla",8,4,4
+"41061",2018,"Oregon","Union",5,3,2
+"41063",2018,"Oregon","Wallowa",2,2,0
+"41065",2018,"Oregon","Wasco",6,5,1
+"41067",2018,"Oregon","Washington",6,5,1
+"41001",2017,"Oregon","Baker",6,3,3
+"41003",2017,"Oregon","Benton",3,2,1
+"41005",2017,"Oregon","Clackamas",4,3,1
+"41009",2017,"Oregon","Columbia",4,3,1
+"41013",2017,"Oregon","Crook",16,7,9
+"41017",2017,"Oregon","Deschutes",27,5,22
+"41019",2017,"Oregon","Douglas",8,4,4
+"41023",2017,"Oregon","Grant",12,9,3
+"41025",2017,"Oregon","Harney",7,4,3
+"41029",2017,"Oregon","Jackson",20,4,16
+"41031",2017,"Oregon","Jefferson",10,6,4
+"41033",2017,"Oregon","Josephine",17,2,15
+"41035",2017,"Oregon","Klamath",26,14,12
+"41037",2017,"Oregon","Lake",17,12,5
+"41039",2017,"Oregon","Lane",12,4,8
+"41043",2017,"Oregon","Linn",7,2,5
+"41047",2017,"Oregon","Marion",3,2,1
+"41051",2017,"Oregon","Multnomah",6,2,4
+"41059",2017,"Oregon","Umatilla",10,7,3
+"41061",2017,"Oregon","Union",8,5,3
+"41063",2017,"Oregon","Wallowa",8,4,4
+"41065",2017,"Oregon","Wasco",15,6,9
+"41067",2017,"Oregon","Washington",7,6,1
+"41001",2016,"Oregon","Baker",0,0,0
+"41003",2016,"Oregon","Benton",0,0,0
+"41005",2016,"Oregon","Clackamas",0,0,0
+"41009",2016,"Oregon","Columbia",0,0,0
+"41013",2016,"Oregon","Crook",1,1,0
+"41017",2016,"Oregon","Deschutes",0,0,0
+"41019",2016,"Oregon","Douglas",0,0,0
+"41023",2016,"Oregon","Grant",0,0,0
+"41025",2016,"Oregon","Harney",1,1,0
+"41029",2016,"Oregon","Jackson",0,0,0
+"41033",2016,"Oregon","Josephine",0,0,0
+"41035",2016,"Oregon","Klamath",0,0,0
+"41037",2016,"Oregon","Lake",2,1,1
+"41039",2016,"Oregon","Lane",0,0,0
+"41043",2016,"Oregon","Linn",0,0,0
+"41047",2016,"Oregon","Marion",0,0,0
+"41051",2016,"Oregon","Multnomah",0,0,0
+"41059",2016,"Oregon","Umatilla",0,0,0
+"41061",2016,"Oregon","Union",0,0,0
+"41063",2016,"Oregon","Wallowa",0,0,0
+"41065",2016,"Oregon","Wasco",0,0,0
+"41067",2016,"Oregon","Washington",0,0,0
+"41001",2015,"Oregon","Baker",10,4,6
+"41003",2015,"Oregon","Benton",2,0,2
+"41005",2015,"Oregon","Clackamas",2,0,2
+"41009",2015,"Oregon","Columbia",1,1,0
+"41013",2015,"Oregon","Crook",8,6,2
+"41017",2015,"Oregon","Deschutes",3,2,1
+"41019",2015,"Oregon","Douglas",1,0,1
+"41023",2015,"Oregon","Grant",9,3,6
+"41025",2015,"Oregon","Harney",4,4,0
+"41029",2015,"Oregon","Jackson",21,11,10
+"41031",2015,"Oregon","Jefferson",5,3,2
+"41033",2015,"Oregon","Josephine",3,1,2
+"41035",2015,"Oregon","Klamath",8,7,1
+"41037",2015,"Oregon","Lake",3,3,0
+"41039",2015,"Oregon","Lane",2,0,2
+"41043",2015,"Oregon","Linn",3,1,2
+"41047",2015,"Oregon","Marion",2,0,2
+"41051",2015,"Oregon","Multnomah",2,0,2
+"41059",2015,"Oregon","Umatilla",5,2,3
+"41061",2015,"Oregon","Union",9,5,4
+"41063",2015,"Oregon","Wallowa",8,2,6
+"41065",2015,"Oregon","Wasco",2,0,2
+"41067",2015,"Oregon","Washington",2,1,1
+"41001",2014,"Oregon","Baker",0,0,0
+"41003",2014,"Oregon","Benton",1,1,0
+"41005",2014,"Oregon","Clackamas",2,2,0
+"41009",2014,"Oregon","Columbia",0,0,0
+"41013",2014,"Oregon","Crook",12,6,6
+"41017",2014,"Oregon","Deschutes",0,0,0
+"41019",2014,"Oregon","Douglas",0,0,0
+"41023",2014,"Oregon","Grant",2,0,2
+"41025",2014,"Oregon","Harney",5,2,3
+"41029",2014,"Oregon","Jackson",0,0,0
+"41031",2014,"Oregon","Jefferson",2,0,2
+"41033",2014,"Oregon","Josephine",0,0,0
+"41035",2014,"Oregon","Klamath",3,3,0
+"41037",2014,"Oregon","Lake",14,12,2
+"41039",2014,"Oregon","Lane",0,0,0
+"41043",2014,"Oregon","Linn",0,0,0
+"41047",2014,"Oregon","Marion",1,0,1
+"41051",2014,"Oregon","Multnomah",0,0,0
+"41059",2014,"Oregon","Umatilla",0,0,0
+"41061",2014,"Oregon","Union",4,3,1
+"41063",2014,"Oregon","Wallowa",3,3,0
+"41065",2014,"Oregon","Wasco",1,1,0
+"41067",2014,"Oregon","Washington",0,0,0
+"41001",2013,"Oregon","Baker",0,0,0
+"41003",2013,"Oregon","Benton",2,2,0
+"41005",2013,"Oregon","Clackamas",0,0,0
+"41009",2013,"Oregon","Columbia",0,0,0
+"41011",2013,"Oregon","Coos",0,0,0
+"41013",2013,"Oregon","Crook",13,10,3
+"41017",2013,"Oregon","Deschutes",0,0,0
+"41019",2013,"Oregon","Douglas",0,0,0
+"41023",2013,"Oregon","Grant",3,2,1
+"41025",2013,"Oregon","Harney",8,7,1
+"41029",2013,"Oregon","Jackson",14,7,7
+"41031",2013,"Oregon","Jefferson",0,0,0
+"41033",2013,"Oregon","Josephine",12,1,11
+"41035",2013,"Oregon","Klamath",19,11,8
+"41037",2013,"Oregon","Lake",38,13,25
+"41039",2013,"Oregon","Lane",4,4,0
+"41043",2013,"Oregon","Linn",0,0,0
+"41047",2013,"Oregon","Marion",5,5,0
+"41051",2013,"Oregon","Multnomah",4,4,0
+"41059",2013,"Oregon","Umatilla",5,5,0
+"41061",2013,"Oregon","Union",4,4,0
+"41063",2013,"Oregon","Wallowa",0,0,0
+"41065",2013,"Oregon","Wasco",4,2,2
+"41067",2013,"Oregon","Washington",6,6,0
+"41001",2012,"Oregon","Baker",2,1,1
+"41003",2012,"Oregon","Benton",0,0,0
+"41005",2012,"Oregon","Clackamas",0,0,0
+"41009",2012,"Oregon","Columbia",0,0,0
+"41011",2012,"Oregon","Coos",1,0,1
+"41013",2012,"Oregon","Crook",1,1,0
+"41017",2012,"Oregon","Deschutes",15,6,9
+"41019",2012,"Oregon","Douglas",0,0,0
+"41023",2012,"Oregon","Grant",1,1,0
+"41025",2012,"Oregon","Harney",1,1,0
+"41029",2012,"Oregon","Jackson",0,0,0
+"41031",2012,"Oregon","Jefferson",0,0,0
+"41033",2012,"Oregon","Josephine",0,0,0
+"41035",2012,"Oregon","Klamath",4,4,0
+"41037",2012,"Oregon","Lake",10,8,2
+"41039",2012,"Oregon","Lane",0,0,0
+"41043",2012,"Oregon","Linn",0,0,0
+"41047",2012,"Oregon","Marion",0,0,0
+"41051",2012,"Oregon","Multnomah",0,0,0
+"41059",2012,"Oregon","Umatilla",0,0,0
+"41061",2012,"Oregon","Union",2,2,0
+"41063",2012,"Oregon","Wallowa",2,2,0
+"41065",2012,"Oregon","Wasco",0,0,0
+"41067",2012,"Oregon","Washington",0,0,0
+"41001",2011,"Oregon","Baker",0,0,0
+"41003",2011,"Oregon","Benton",0,0,0
+"41005",2011,"Oregon","Clackamas",0,0,0
+"41009",2011,"Oregon","Columbia",0,0,0
+"41011",2011,"Oregon","Coos",0,0,0
+"41013",2011,"Oregon","Crook",6,5,1
+"41017",2011,"Oregon","Deschutes",1,1,0
+"41019",2011,"Oregon","Douglas",0,0,0
+"41023",2011,"Oregon","Grant",3,3,0
+"41025",2011,"Oregon","Harney",5,5,0
+"41029",2011,"Oregon","Jackson",0,0,0
+"41031",2011,"Oregon","Jefferson",0,0,0
+"41033",2011,"Oregon","Josephine",0,0,0
+"41035",2011,"Oregon","Klamath",8,8,0
+"41037",2011,"Oregon","Lake",20,13,7
+"41039",2011,"Oregon","Lane",0,0,0
+"41043",2011,"Oregon","Linn",1,0,1
+"41047",2011,"Oregon","Marion",0,0,0
+"41051",2011,"Oregon","Multnomah",4,4,0
+"41059",2011,"Oregon","Umatilla",1,1,0
+"41061",2011,"Oregon","Union",3,2,1
+"41063",2011,"Oregon","Wallowa",0,0,0
+"41065",2011,"Oregon","Wasco",0,0,0
+"41067",2011,"Oregon","Washington",1,1,0
+"41071",2011,"Oregon","Yamhill",0,0,0
+"41001",2010,"Oregon","Baker",0,0,0
+"41003",2010,"Oregon","Benton",0,0,0
+"41005",2010,"Oregon","Clackamas",0,0,0
+"41009",2010,"Oregon","Columbia",0,0,0
+"41013",2010,"Oregon","Crook",1,1,0
+"41017",2010,"Oregon","Deschutes",0,0,0
+"41019",2010,"Oregon","Douglas",0,0,0
+"41023",2010,"Oregon","Grant",2,1,1
+"41025",2010,"Oregon","Harney",2,2,0
+"41029",2010,"Oregon","Jackson",0,0,0
+"41031",2010,"Oregon","Jefferson",1,1,0
+"41033",2010,"Oregon","Josephine",0,0,0
+"41035",2010,"Oregon","Klamath",2,2,0
+"41037",2010,"Oregon","Lake",2,2,0
+"41039",2010,"Oregon","Lane",0,0,0
+"41043",2010,"Oregon","Linn",0,0,0
+"41047",2010,"Oregon","Marion",0,0,0
+"41051",2010,"Oregon","Multnomah",0,0,0
+"41059",2010,"Oregon","Umatilla",0,0,0
+"41061",2010,"Oregon","Union",0,0,0
+"41063",2010,"Oregon","Wallowa",1,1,0
+"41065",2010,"Oregon","Wasco",1,1,0
+"41067",2010,"Oregon","Washington",1,1,0
+"41071",2010,"Oregon","Yamhill",0,0,0
+"53001",2019,"Washington","Adams",0,0,0
+"53003",2019,"Washington","Asotin",0,0,0
+"53005",2019,"Washington","Benton",0,0,0
+"53007",2019,"Washington","Chelan",0,0,0
+"53009",2019,"Washington","Clallam",0,0,0
+"53011",2019,"Washington","Clark",0,0,0
+"53013",2019,"Washington","Columbia",0,0,0
+"53015",2019,"Washington","Cowlitz",0,0,0
+"53021",2019,"Washington","Franklin",0,0,0
+"53023",2019,"Washington","Garfield",0,0,0
+"53025",2019,"Washington","Grant",0,0,0
+"53027",2019,"Washington","Grays Harbor",0,0,0
+"53031",2019,"Washington","Jefferson",0,0,0
+"53033",2019,"Washington","King",0,0,0
+"53035",2019,"Washington","Kitsap",0,0,0
+"53037",2019,"Washington","Kittitas",0,0,0
+"53039",2019,"Washington","Klickitat",0,0,0
+"53041",2019,"Washington","Lewis",0,0,0
+"53045",2019,"Washington","Mason",0,0,0
+"53047",2019,"Washington","Okanogan",0,0,0
+"53053",2019,"Washington","Pierce",0,0,0
+"53055",2019,"Washington","San Juan",0,0,0
+"53057",2019,"Washington","Skagit",0,0,0
+"53061",2019,"Washington","Snohomish",1,1,0
+"53063",2019,"Washington","Spokane",0,0,0
+"53065",2019,"Washington","Stevens",0,0,0
+"53067",2019,"Washington","Thurston",0,0,0
+"53071",2019,"Washington","Walla Walla",0,0,0
+"53073",2019,"Washington","Whatcom",0,0,0
+"53075",2019,"Washington","Whitman",0,0,0
+"53077",2019,"Washington","Yakima",0,0,0
+"53001",2018,"Washington","Adams",8,3,5
+"53003",2018,"Washington","Asotin",8,5,3
+"53005",2018,"Washington","Benton",7,4,3
+"53007",2018,"Washington","Chelan",20,8,12
+"53009",2018,"Washington","Clallam",5,1,4
+"53011",2018,"Washington","Clark",4,4,0
+"53013",2018,"Washington","Columbia",7,6,1
+"53015",2018,"Washington","Cowlitz",4,2,2
+"53021",2018,"Washington","Franklin",7,4,3
+"53023",2018,"Washington","Garfield",4,3,1
+"53025",2018,"Washington","Grant",10,4,6
+"53027",2018,"Washington","Grays Harbor",3,0,3
+"53031",2018,"Washington","Jefferson",6,3,3
+"53033",2018,"Washington","King",8,3,5
+"53035",2018,"Washington","Kitsap",4,1,3
+"53037",2018,"Washington","Kittitas",10,4,6
+"53039",2018,"Washington","Klickitat",5,3,2
+"53041",2018,"Washington","Lewis",5,1,4
+"53045",2018,"Washington","Mason",6,3,3
+"53047",2018,"Washington","Okanogan",24,4,20
+"53053",2018,"Washington","Pierce",7,2,5
+"53057",2018,"Washington","Skagit",5,2,3
+"53061",2018,"Washington","Snohomish",7,2,5
+"53063",2018,"Washington","Spokane",12,4,8
+"53065",2018,"Washington","Stevens",17,8,9
+"53067",2018,"Washington","Thurston",6,1,5
+"53071",2018,"Washington","Walla Walla",8,5,3
+"53073",2018,"Washington","Whatcom",6,3,3
+"53075",2018,"Washington","Whitman",5,3,2
+"53077",2018,"Washington","Yakima",9,0,9
+"53001",2017,"Washington","Adams",12,6,6
+"53003",2017,"Washington","Asotin",19,9,10
+"53005",2017,"Washington","Benton",10,5,5
+"53007",2017,"Washington","Chelan",17,5,12
+"53009",2017,"Washington","Clallam",3,1,2
+"53011",2017,"Washington","Clark",5,3,2
+"53013",2017,"Washington","Columbia",9,6,3
+"53015",2017,"Washington","Cowlitz",2,0,2
+"53021",2017,"Washington","Franklin",9,3,6
+"53023",2017,"Washington","Garfield",6,3,3
+"53025",2017,"Washington","Grant",12,6,6
+"53027",2017,"Washington","Grays Harbor",1,0,1
+"53031",2017,"Washington","Jefferson",2,2,0
+"53033",2017,"Washington","King",9,6,3
+"53035",2017,"Washington","Kitsap",5,4,1
+"53037",2017,"Washington","Kittitas",15,10,5
+"53039",2017,"Washington","Klickitat",3,1,2
+"53041",2017,"Washington","Lewis",3,1,2
+"53045",2017,"Washington","Mason",2,0,2
+"53047",2017,"Washington","Okanogan",16,3,13
+"53053",2017,"Washington","Pierce",8,4,4
+"53057",2017,"Washington","Skagit",0,0,0
+"53061",2017,"Washington","Snohomish",6,5,1
+"53063",2017,"Washington","Spokane",16,7,9
+"53065",2017,"Washington","Stevens",13,7,6
+"53067",2017,"Washington","Thurston",4,3,1
+"53071",2017,"Washington","Walla Walla",11,8,3
+"53073",2017,"Washington","Whatcom",7,5,2
+"53075",2017,"Washington","Whitman",10,5,5
+"53077",2017,"Washington","Yakima",21,15,6
+"53001",2016,"Washington","Adams",0,0,0
+"53003",2016,"Washington","Asotin",0,0,0
+"53005",2016,"Washington","Benton",0,0,0
+"53007",2016,"Washington","Chelan",0,0,0
+"53009",2016,"Washington","Clallam",0,0,0
+"53011",2016,"Washington","Clark",0,0,0
+"53013",2016,"Washington","Columbia",0,0,0
+"53015",2016,"Washington","Cowlitz",0,0,0
+"53021",2016,"Washington","Franklin",0,0,0
+"53025",2016,"Washington","Grant",0,0,0
+"53027",2016,"Washington","Grays Harbor",0,0,0
+"53031",2016,"Washington","Jefferson",0,0,0
+"53033",2016,"Washington","King",0,0,0
+"53035",2016,"Washington","Kitsap",0,0,0
+"53037",2016,"Washington","Kittitas",3,2,1
+"53039",2016,"Washington","Klickitat",0,0,0
+"53041",2016,"Washington","Lewis",0,0,0
+"53045",2016,"Washington","Mason",0,0,0
+"53047",2016,"Washington","Okanogan",0,0,0
+"53053",2016,"Washington","Pierce",1,1,0
+"53057",2016,"Washington","Skagit",0,0,0
+"53061",2016,"Washington","Snohomish",1,1,0
+"53063",2016,"Washington","Spokane",0,0,0
+"53065",2016,"Washington","Stevens",0,0,0
+"53067",2016,"Washington","Thurston",0,0,0
+"53071",2016,"Washington","Walla Walla",0,0,0
+"53073",2016,"Washington","Whatcom",0,0,0
+"53075",2016,"Washington","Whitman",0,0,0
+"53077",2016,"Washington","Yakima",5,2,3
+"53001",2015,"Washington","Adams",6,3,3
+"53003",2015,"Washington","Asotin",0,0,0
+"53005",2015,"Washington","Benton",3,3,0
+"53007",2015,"Washington","Chelan",3,1,2
+"53009",2015,"Washington","Clallam",0,0,0
+"53011",2015,"Washington","Clark",4,3,1
+"53013",2015,"Washington","Columbia",1,1,0
+"53015",2015,"Washington","Cowlitz",1,1,0
+"53021",2015,"Washington","Franklin",4,3,1
+"53025",2015,"Washington","Grant",4,2,2
+"53027",2015,"Washington","Grays Harbor",0,0,0
+"53031",2015,"Washington","Jefferson",0,0,0
+"53033",2015,"Washington","King",0,0,0
+"53035",2015,"Washington","Kitsap",0,0,0
+"53037",2015,"Washington","Kittitas",2,2,0
+"53039",2015,"Washington","Klickitat",1,1,0
+"53041",2015,"Washington","Lewis",1,1,0
+"53045",2015,"Washington","Mason",1,1,0
+"53047",2015,"Washington","Okanogan",14,4,10
+"53053",2015,"Washington","Pierce",5,5,0
+"53057",2015,"Washington","Skagit",0,0,0
+"53061",2015,"Washington","Snohomish",2,2,0
+"53063",2015,"Washington","Spokane",14,10,4
+"53065",2015,"Washington","Stevens",10,5,5
+"53067",2015,"Washington","Thurston",1,1,0
+"53071",2015,"Washington","Walla Walla",4,1,3
+"53073",2015,"Washington","Whatcom",0,0,0
+"53075",2015,"Washington","Whitman",5,3,2
+"53077",2015,"Washington","Yakima",6,3,3
+"53001",2014,"Washington","Adams",0,0,0
+"53003",2014,"Washington","Asotin",3,3,0
+"53005",2014,"Washington","Benton",0,0,0
+"53007",2014,"Washington","Chelan",6,5,1
+"53009",2014,"Washington","Clallam",0,0,0
+"53011",2014,"Washington","Clark",1,1,0
+"53013",2014,"Washington","Columbia",0,0,0
+"53015",2014,"Washington","Cowlitz",0,0,0
+"53021",2014,"Washington","Franklin",0,0,0
+"53025",2014,"Washington","Grant",1,1,0
+"53027",2014,"Washington","Grays Harbor",0,0,0
+"53031",2014,"Washington","Jefferson",0,0,0
+"53033",2014,"Washington","King",0,0,0
+"53035",2014,"Washington","Kitsap",0,0,0
+"53037",2014,"Washington","Kittitas",1,0,1
+"53039",2014,"Washington","Klickitat",0,0,0
+"53041",2014,"Washington","Lewis",0,0,0
+"53045",2014,"Washington","Mason",0,0,0
+"53047",2014,"Washington","Okanogan",3,2,1
+"53053",2014,"Washington","Pierce",0,0,0
+"53057",2014,"Washington","Skagit",0,0,0
+"53061",2014,"Washington","Snohomish",0,0,0
+"53063",2014,"Washington","Spokane",1,1,0
+"53065",2014,"Washington","Stevens",2,1,1
+"53067",2014,"Washington","Thurston",0,0,0
+"53071",2014,"Washington","Walla Walla",0,0,0
+"53073",2014,"Washington","Whatcom",0,0,0
+"53075",2014,"Washington","Whitman",0,0,0
+"53077",2014,"Washington","Yakima",4,4,0
+"53001",2013,"Washington","Adams",0,0,0
+"53003",2013,"Washington","Asotin",0,0,0
+"53005",2013,"Washington","Benton",0,0,0
+"53007",2013,"Washington","Chelan",0,0,0
+"53009",2013,"Washington","Clallam",0,0,0
+"53011",2013,"Washington","Clark",6,6,0
+"53013",2013,"Washington","Columbia",0,0,0
+"53015",2013,"Washington","Cowlitz",0,0,0
+"53021",2013,"Washington","Franklin",0,0,0
+"53025",2013,"Washington","Grant",0,0,0
+"53027",2013,"Washington","Grays Harbor",0,0,0
+"53031",2013,"Washington","Jefferson",0,0,0
+"53033",2013,"Washington","King",0,0,0
+"53035",2013,"Washington","Kitsap",0,0,0
+"53037",2013,"Washington","Kittitas",0,0,0
+"53039",2013,"Washington","Klickitat",0,0,0
+"53041",2013,"Washington","Lewis",0,0,0
+"53045",2013,"Washington","Mason",0,0,0
+"53047",2013,"Washington","Okanogan",0,0,0
+"53053",2013,"Washington","Pierce",0,0,0
+"53057",2013,"Washington","Skagit",0,0,0
+"53061",2013,"Washington","Snohomish",0,0,0
+"53063",2013,"Washington","Spokane",1,1,0
+"53065",2013,"Washington","Stevens",0,0,0
+"53067",2013,"Washington","Thurston",3,3,0
+"53071",2013,"Washington","Walla Walla",2,2,0
+"53073",2013,"Washington","Whatcom",0,0,0
+"53075",2013,"Washington","Whitman",0,0,0
+"53077",2013,"Washington","Yakima",7,7,0
+"53001",2012,"Washington","Adams",0,0,0
+"53003",2012,"Washington","Asotin",10,5,5
+"53005",2012,"Washington","Benton",1,1,0
+"53007",2012,"Washington","Chelan",18,4,14
+"53009",2012,"Washington","Clallam",0,0,0
+"53011",2012,"Washington","Clark",0,0,0
+"53013",2012,"Washington","Columbia",0,0,0
+"53015",2012,"Washington","Cowlitz",0,0,0
+"53021",2012,"Washington","Franklin",1,1,0
+"53025",2012,"Washington","Grant",0,0,0
+"53027",2012,"Washington","Grays Harbor",0,0,0
+"53031",2012,"Washington","Jefferson",0,0,0
+"53033",2012,"Washington","King",0,0,0
+"53035",2012,"Washington","Kitsap",0,0,0
+"53037",2012,"Washington","Kittitas",15,7,8
+"53039",2012,"Washington","Klickitat",0,0,0
+"53041",2012,"Washington","Lewis",0,0,0
+"53045",2012,"Washington","Mason",1,1,0
+"53047",2012,"Washington","Okanogan",8,5,3
+"53053",2012,"Washington","Pierce",1,1,0
+"53057",2012,"Washington","Skagit",0,0,0
+"53061",2012,"Washington","Snohomish",1,1,0
+"53063",2012,"Washington","Spokane",2,2,0
+"53065",2012,"Washington","Stevens",0,0,0
+"53067",2012,"Washington","Thurston",3,2,1
+"53071",2012,"Washington","Walla Walla",0,0,0
+"53073",2012,"Washington","Whatcom",0,0,0
+"53075",2012,"Washington","Whitman",1,1,0
+"53077",2012,"Washington","Yakima",5,4,1
+"53001",2011,"Washington","Adams",0,0,0
+"53003",2011,"Washington","Asotin",0,0,0
+"53005",2011,"Washington","Benton",0,0,0
+"53007",2011,"Washington","Chelan",1,1,0
+"53009",2011,"Washington","Clallam",0,0,0
+"53011",2011,"Washington","Clark",4,4,0
+"53013",2011,"Washington","Columbia",0,0,0
+"53015",2011,"Washington","Cowlitz",0,0,0
+"53021",2011,"Washington","Franklin",0,0,0
+"53025",2011,"Washington","Grant",0,0,0
+"53027",2011,"Washington","Grays Harbor",0,0,0
+"53031",2011,"Washington","Jefferson",0,0,0
+"53033",2011,"Washington","King",0,0,0
+"53035",2011,"Washington","Kitsap",1,1,0
+"53037",2011,"Washington","Kittitas",5,4,1
+"53039",2011,"Washington","Klickitat",0,0,0
+"53041",2011,"Washington","Lewis",0,0,0
+"53045",2011,"Washington","Mason",0,0,0
+"53047",2011,"Washington","Okanogan",0,0,0
+"53051",2011,"Washington","Pend Oreille",5,0,5
+"53053",2011,"Washington","Pierce",2,2,0
+"53057",2011,"Washington","Skagit",0,0,0
+"53061",2011,"Washington","Snohomish",1,1,0
+"53063",2011,"Washington","Spokane",0,0,0
+"53065",2011,"Washington","Stevens",0,0,0
+"53067",2011,"Washington","Thurston",1,1,0
+"53071",2011,"Washington","Walla Walla",0,0,0
+"53073",2011,"Washington","Whatcom",0,0,0
+"53075",2011,"Washington","Whitman",0,0,0
+"53077",2011,"Washington","Yakima",6,5,1
+"53001",2010,"Washington","Adams",0,0,0
+"53003",2010,"Washington","Asotin",0,0,0
+"53005",2010,"Washington","Benton",0,0,0
+"53007",2010,"Washington","Chelan",0,0,0
+"53009",2010,"Washington","Clallam",0,0,0
+"53011",2010,"Washington","Clark",0,0,0
+"53013",2010,"Washington","Columbia",0,0,0
+"53015",2010,"Washington","Cowlitz",0,0,0
+"53021",2010,"Washington","Franklin",0,0,0
+"53025",2010,"Washington","Grant",0,0,0
+"53027",2010,"Washington","Grays Harbor",0,0,0
+"53031",2010,"Washington","Jefferson",0,0,0
+"53033",2010,"Washington","King",0,0,0
+"53035",2010,"Washington","Kitsap",0,0,0
+"53037",2010,"Washington","Kittitas",0,0,0
+"53039",2010,"Washington","Klickitat",0,0,0
+"53041",2010,"Washington","Lewis",0,0,0
+"53045",2010,"Washington","Mason",0,0,0
+"53047",2010,"Washington","Okanogan",0,0,0
+"53051",2010,"Washington","Pend Oreille",0,0,0
+"53053",2010,"Washington","Pierce",0,0,0
+"53057",2010,"Washington","Skagit",0,0,0
+"53061",2010,"Washington","Snohomish",0,0,0
+"53063",2010,"Washington","Spokane",0,0,0
+"53065",2010,"Washington","Stevens",0,0,0
+"53067",2010,"Washington","Thurston",0,0,0
+"53071",2010,"Washington","Walla Walla",0,0,0
+"53073",2010,"Washington","Whatcom",0,0,0
+"53075",2010,"Washington","Whitman",0,0,0
+"53077",2010,"Washington","Yakima",0,0,0
+"06001",2019,"California","Alameda",0,0,0
+"06007",2019,"California","Butte",1,1,0
+"06009",2019,"California","Calaveras",0,0,0
+"06011",2019,"California","Colusa",0,0,0
+"06013",2019,"California","Contra Costa",0,0,0
+"06015",2019,"California","Del Norte",0,0,0
+"06017",2019,"California","El Dorado",0,0,0
+"06019",2019,"California","Fresno",0,0,0
+"06021",2019,"California","Glenn",0,0,0
+"06023",2019,"California","Humboldt",0,0,0
+"06025",2019,"California","Imperial",1,0,1
+"06027",2019,"California","Inyo",3,2,1
+"06029",2019,"California","Kern",1,1,0
+"06031",2019,"California","Kings",20,19,1
+"06033",2019,"California","Lake",0,0,0
+"06037",2019,"California","Los Angeles",0,0,0
+"06039",2019,"California","Madera",0,0,0
+"06041",2019,"California","Marin",0,0,0
+"06043",2019,"California","Mariposa",8,3,5
+"06045",2019,"California","Mendocino",0,0,0
+"06047",2019,"California","Merced",1,1,0
+"06051",2019,"California","Mono",0,0,0
+"06053",2019,"California","Monterey",0,0,0
+"06055",2019,"California","Napa",0,0,0
+"06057",2019,"California","Nevada",0,0,0
+"06059",2019,"California","Orange",1,1,0
+"06061",2019,"California","Placer",0,0,0
+"06063",2019,"California","Plumas",2,2,0
+"06065",2019,"California","Riverside",0,0,0
+"06067",2019,"California","Sacramento",0,0,0
+"06069",2019,"California","San Benito",0,0,0
+"06071",2019,"California","San Bernardino",1,1,0
+"06073",2019,"California","San Diego",0,0,0
+"06075",2019,"California","San Francisco",0,0,0
+"06077",2019,"California","San Joaquin",2,2,0
+"06079",2019,"California","San Luis Obispo",0,0,0
+"06081",2019,"California","San Mateo",0,0,0
+"06083",2019,"California","Santa Barbara",0,0,0
+"06085",2019,"California","Santa Clara",0,0,0
+"06087",2019,"California","Santa Cruz",0,0,0
+"06089",2019,"California","Shasta",0,0,0
+"06093",2019,"California","Siskiyou",3,1,2
+"06095",2019,"California","Solano",0,0,0
+"06097",2019,"California","Sonoma",0,0,0
+"06099",2019,"California","Stanislaus",4,4,0
+"06101",2019,"California","Sutter",2,2,0
+"06103",2019,"California","Tehama",0,0,0
+"06105",2019,"California","Trinity",1,1,0
+"06107",2019,"California","Tulare",5,5,0
+"06111",2019,"California","Ventura",0,0,0
+"06113",2019,"California","Yolo",1,1,0
+"06001",2018,"California","Alameda",14,2,12
+"06007",2018,"California","Butte",24,10,14
+"06009",2018,"California","Calaveras",16,11,5
+"06011",2018,"California","Colusa",21,8,13
+"06013",2018,"California","Contra Costa",14,3,11
+"06015",2018,"California","Del Norte",0,0,0
+"06017",2018,"California","El Dorado",4,4,0
+"06019",2018,"California","Fresno",18,9,9
+"06021",2018,"California","Glenn",17,8,9
+"06023",2018,"California","Humboldt",5,4,1
+"06025",2018,"California","Imperial",6,5,1
+"06027",2018,"California","Inyo",7,4,3
+"06029",2018,"California","Kern",9,7,2
+"06031",2018,"California","Kings",33,20,13
+"06033",2018,"California","Lake",3,1,2
+"06037",2018,"California","Los Angeles",2,1,1
+"06039",2018,"California","Madera",24,17,7
+"06041",2018,"California","Marin",13,2,11
+"06043",2018,"California","Mariposa",31,0,31
+"06045",2018,"California","Mendocino",15,7,8
+"06047",2018,"California","Merced",25,13,12
+"06051",2018,"California","Mono",20,9,11
+"06053",2018,"California","Monterey",7,6,1
+"06055",2018,"California","Napa",12,3,9
+"06057",2018,"California","Nevada",12,7,5
+"06059",2018,"California","Orange",6,4,2
+"06061",2018,"California","Placer",13,7,6
+"06063",2018,"California","Plumas",10,8,2
+"06065",2018,"California","Riverside",1,1,0
+"06067",2018,"California","Sacramento",13,3,10
+"06069",2018,"California","San Benito",8,8,0
+"06071",2018,"California","San Bernardino",1,1,0
+"06073",2018,"California","San Diego",0,0,0
+"06075",2018,"California","San Francisco",14,2,12
+"06077",2018,"California","San Joaquin",17,6,11
+"06079",2018,"California","San Luis Obispo",1,1,0
+"06081",2018,"California","San Mateo",13,2,11
+"06083",2018,"California","Santa Barbara",1,1,0
+"06085",2018,"California","Santa Clara",13,2,11
+"06087",2018,"California","Santa Cruz",8,4,4
+"06089",2018,"California","Shasta",8,2,6
+"06093",2018,"California","Siskiyou",36,8,28
+"06095",2018,"California","Solano",13,2,11
+"06097",2018,"California","Sonoma",13,2,11
+"06099",2018,"California","Stanislaus",21,8,13
+"06101",2018,"California","Sutter",20,7,13
+"06103",2018,"California","Tehama",24,9,15
+"06105",2018,"California","Trinity",17,9,8
+"06107",2018,"California","Tulare",30,17,13
+"06111",2018,"California","Ventura",0,0,0
+"06113",2018,"California","Yolo",12,2,10
+"06001",2017,"California","Alameda",7,5,2
+"06007",2017,"California","Butte",3,3,0
+"06009",2017,"California","Calaveras",4,3,1
+"06011",2017,"California","Colusa",5,3,2
+"06013",2017,"California","Contra Costa",8,5,3
+"06015",2017,"California","Del Norte",2,0,2
+"06017",2017,"California","El Dorado",0,0,0
+"06019",2017,"California","Fresno",17,12,5
+"06021",2017,"California","Glenn",6,5,1
+"06023",2017,"California","Humboldt",7,4,3
+"06025",2017,"California","Imperial",7,6,1
+"06027",2017,"California","Inyo",3,2,1
+"06029",2017,"California","Kern",6,6,0
+"06031",2017,"California","Kings",31,13,18
+"06033",2017,"California","Lake",2,1,1
+"06037",2017,"California","Los Angeles",3,2,1
+"06039",2017,"California","Madera",17,12,5
+"06041",2017,"California","Marin",6,4,2
+"06043",2017,"California","Mariposa",23,13,10
+"06045",2017,"California","Mendocino",5,4,1
+"06047",2017,"California","Merced",17,14,3
+"06051",2017,"California","Mono",1,1,0
+"06053",2017,"California","Monterey",1,1,0
+"06055",2017,"California","Napa",13,5,8
+"06057",2017,"California","Nevada",1,0,1
+"06059",2017,"California","Orange",8,6,2
+"06061",2017,"California","Placer",0,0,0
+"06063",2017,"California","Plumas",18,12,6
+"06065",2017,"California","Riverside",0,0,0
+"06067",2017,"California","Sacramento",1,1,0
+"06069",2017,"California","San Benito",0,0,0
+"06071",2017,"California","San Bernardino",0,0,0
+"06073",2017,"California","San Diego",0,0,0
+"06075",2017,"California","San Francisco",8,8,0
+"06077",2017,"California","San Joaquin",11,11,0
+"06079",2017,"California","San Luis Obispo",0,0,0
+"06081",2017,"California","San Mateo",7,5,2
+"06083",2017,"California","Santa Barbara",7,3,4
+"06085",2017,"California","Santa Clara",7,7,0
+"06087",2017,"California","Santa Cruz",2,2,0
+"06089",2017,"California","Shasta",1,0,1
+"06093",2017,"California","Siskiyou",2,1,1
+"06095",2017,"California","Solano",9,5,4
+"06097",2017,"California","Sonoma",4,1,3
+"06099",2017,"California","Stanislaus",27,20,7
+"06101",2017,"California","Sutter",6,6,0
+"06103",2017,"California","Tehama",5,2,3
+"06105",2017,"California","Trinity",10,4,6
+"06107",2017,"California","Tulare",24,10,14
+"06111",2017,"California","Ventura",7,5,2
+"06113",2017,"California","Yolo",7,6,1
+"06001",2016,"California","Alameda",0,0,0
+"06003",2016,"California","Alpine",0,0,0
+"06007",2016,"California","Butte",1,1,0
+"06009",2016,"California","Calaveras",0,0,0
+"06011",2016,"California","Colusa",0,0,0
+"06013",2016,"California","Contra Costa",0,0,0
+"06015",2016,"California","Del Norte",0,0,0
+"06017",2016,"California","El Dorado",0,0,0
+"06019",2016,"California","Fresno",4,4,0
+"06021",2016,"California","Glenn",0,0,0
+"06023",2016,"California","Humboldt",0,0,0
+"06025",2016,"California","Imperial",3,3,0
+"06027",2016,"California","Inyo",1,1,0
+"06029",2016,"California","Kern",1,1,0
+"06031",2016,"California","Kings",25,20,5
+"06033",2016,"California","Lake",0,0,0
+"06037",2016,"California","Los Angeles",0,0,0
+"06039",2016,"California","Madera",8,8,0
+"06041",2016,"California","Marin",0,0,0
+"06043",2016,"California","Mariposa",1,1,0
+"06045",2016,"California","Mendocino",0,0,0
+"06047",2016,"California","Merced",6,6,0
+"06051",2016,"California","Mono",0,0,0
+"06053",2016,"California","Monterey",1,1,0
+"06055",2016,"California","Napa",0,0,0
+"06057",2016,"California","Nevada",0,0,0
+"06059",2016,"California","Orange",2,2,0
+"06061",2016,"California","Placer",0,0,0
+"06063",2016,"California","Plumas",5,5,0
+"06065",2016,"California","Riverside",0,0,0
+"06067",2016,"California","Sacramento",0,0,0
+"06069",2016,"California","San Benito",0,0,0
+"06071",2016,"California","San Bernardino",0,0,0
+"06073",2016,"California","San Diego",0,0,0
+"06075",2016,"California","San Francisco",0,0,0
+"06077",2016,"California","San Joaquin",1,1,0
+"06079",2016,"California","San Luis Obispo",0,0,0
+"06081",2016,"California","San Mateo",0,0,0
+"06083",2016,"California","Santa Barbara",0,0,0
+"06085",2016,"California","Santa Clara",0,0,0
+"06087",2016,"California","Santa Cruz",0,0,0
+"06089",2016,"California","Shasta",0,0,0
+"06093",2016,"California","Siskiyou",0,0,0
+"06095",2016,"California","Solano",0,0,0
+"06097",2016,"California","Sonoma",0,0,0
+"06099",2016,"California","Stanislaus",11,10,1
+"06101",2016,"California","Sutter",0,0,0
+"06103",2016,"California","Tehama",0,0,0
+"06105",2016,"California","Trinity",0,0,0
+"06107",2016,"California","Tulare",15,14,1
+"06111",2016,"California","Ventura",0,0,0
+"06113",2016,"California","Yolo",0,0,0
+"06001",2015,"California","Alameda",0,0,0
+"06003",2015,"California","Alpine",17,8,9
+"06007",2015,"California","Butte",0,0,0
+"06009",2015,"California","Calaveras",4,0,4
+"06011",2015,"California","Colusa",2,2,0
+"06013",2015,"California","Contra Costa",0,0,0
+"06015",2015,"California","Del Norte",0,0,0
+"06017",2015,"California","El Dorado",0,0,0
+"06019",2015,"California","Fresno",9,5,4
+"06021",2015,"California","Glenn",0,0,0
+"06023",2015,"California","Humboldt",0,0,0
+"06025",2015,"California","Imperial",5,3,2
+"06027",2015,"California","Inyo",4,3,1
+"06029",2015,"California","Kern",6,3,3
+"06031",2015,"California","Kings",27,18,9
+"06033",2015,"California","Lake",1,0,1
+"06037",2015,"California","Los Angeles",5,5,0
+"06039",2015,"California","Madera",12,6,6
+"06041",2015,"California","Marin",3,3,0
+"06043",2015,"California","Mariposa",4,1,3
+"06045",2015,"California","Mendocino",3,1,2
+"06047",2015,"California","Merced",17,14,3
+"06051",2015,"California","Mono",0,0,0
+"06053",2015,"California","Monterey",0,0,0
+"06055",2015,"California","Napa",1,1,0
+"06057",2015,"California","Nevada",0,0,0
+"06059",2015,"California","Orange",5,5,0
+"06061",2015,"California","Placer",1,0,1
+"06063",2015,"California","Plumas",12,11,1
+"06065",2015,"California","Riverside",1,1,0
+"06067",2015,"California","Sacramento",6,6,0
+"06069",2015,"California","San Benito",0,0,0
+"06071",2015,"California","San Bernardino",1,1,0
+"06073",2015,"California","San Diego",0,0,0
+"06075",2015,"California","San Francisco",1,1,0
+"06077",2015,"California","San Joaquin",9,9,0
+"06079",2015,"California","San Luis Obispo",0,0,0
+"06081",2015,"California","San Mateo",0,0,0
+"06083",2015,"California","Santa Barbara",0,0,0
+"06085",2015,"California","Santa Clara",1,1,0
+"06087",2015,"California","Santa Cruz",0,0,0
+"06089",2015,"California","Shasta",1,1,0
+"06093",2015,"California","Siskiyou",3,3,0
+"06095",2015,"California","Solano",3,3,0
+"06097",2015,"California","Sonoma",0,0,0
+"06099",2015,"California","Stanislaus",12,10,2
+"06101",2015,"California","Sutter",0,0,0
+"06103",2015,"California","Tehama",3,2,1
+"06105",2015,"California","Trinity",0,0,0
+"06107",2015,"California","Tulare",17,11,6
+"06111",2015,"California","Ventura",0,0,0
+"06113",2015,"California","Yolo",1,1,0
+"06001",2014,"California","Alameda",1,1,0
+"06003",2014,"California","Alpine",0,0,0
+"06007",2014,"California","Butte",2,2,0
+"06009",2014,"California","Calaveras",0,0,0
+"06011",2014,"California","Colusa",0,0,0
+"06013",2014,"California","Contra Costa",0,0,0
+"06015",2014,"California","Del Norte",0,0,0
+"06017",2014,"California","El Dorado",1,0,1
+"06019",2014,"California","Fresno",22,13,9
+"06021",2014,"California","Glenn",0,0,0
+"06023",2014,"California","Humboldt",1,1,0
+"06025",2014,"California","Imperial",10,8,2
+"06027",2014,"California","Inyo",7,1,6
+"06029",2014,"California","Kern",19,15,4
+"06031",2014,"California","Kings",30,4,26
+"06033",2014,"California","Lake",0,0,0
+"06037",2014,"California","Los Angeles",1,0,1
+"06039",2014,"California","Madera",14,8,6
+"06041",2014,"California","Marin",1,1,0
+"06043",2014,"California","Mariposa",5,4,1
+"06045",2014,"California","Mendocino",0,0,0
+"06047",2014,"California","Merced",18,15,3
+"06051",2014,"California","Mono",0,0,0
+"06053",2014,"California","Monterey",0,0,0
+"06055",2014,"California","Napa",0,0,0
+"06057",2014,"California","Nevada",2,1,1
+"06059",2014,"California","Orange",6,6,0
+"06061",2014,"California","Placer",3,1,2
+"06063",2014,"California","Plumas",10,9,1
+"06065",2014,"California","Riverside",1,1,0
+"06067",2014,"California","Sacramento",0,0,0
+"06069",2014,"California","San Benito",0,0,0
+"06071",2014,"California","San Bernardino",0,0,0
+"06073",2014,"California","San Diego",1,1,0
+"06075",2014,"California","San Francisco",0,0,0
+"06077",2014,"California","San Joaquin",9,9,0
+"06079",2014,"California","San Luis Obispo",0,0,0
+"06081",2014,"California","San Mateo",1,1,0
+"06083",2014,"California","Santa Barbara",0,0,0
+"06085",2014,"California","Santa Clara",1,1,0
+"06087",2014,"California","Santa Cruz",0,0,0
+"06089",2014,"California","Shasta",0,0,0
+"06093",2014,"California","Siskiyou",2,1,1
+"06095",2014,"California","Solano",1,1,0
+"06097",2014,"California","Sonoma",0,0,0
+"06099",2014,"California","Stanislaus",20,12,8
+"06101",2014,"California","Sutter",3,3,0
+"06103",2014,"California","Tehama",0,0,0
+"06105",2014,"California","Trinity",0,0,0
+"06107",2014,"California","Tulare",31,14,17
+"06111",2014,"California","Ventura",0,0,0
+"06113",2014,"California","Yolo",0,0,0
+"06001",2013,"California","Alameda",2,2,0
+"06003",2013,"California","Alpine",7,0,7
+"06007",2013,"California","Butte",0,0,0
+"06009",2013,"California","Calaveras",1,1,0
+"06011",2013,"California","Colusa",0,0,0
+"06013",2013,"California","Contra Costa",2,2,0
+"06015",2013,"California","Del Norte",0,0,0
+"06017",2013,"California","El Dorado",0,0,0
+"06019",2013,"California","Fresno",21,17,4
+"06021",2013,"California","Glenn",1,1,0
+"06023",2013,"California","Humboldt",1,1,0
+"06025",2013,"California","Imperial",0,0,0
+"06027",2013,"California","Inyo",7,0,7
+"06029",2013,"California","Kern",19,16,3
+"06031",2013,"California","Kings",45,29,16
+"06033",2013,"California","Lake",0,0,0
+"06037",2013,"California","Los Angeles",0,0,0
+"06039",2013,"California","Madera",12,11,1
+"06041",2013,"California","Marin",1,1,0
+"06043",2013,"California","Mariposa",1,0,1
+"06045",2013,"California","Mendocino",0,0,0
+"06047",2013,"California","Merced",20,17,3
+"06051",2013,"California","Mono",0,0,0
+"06053",2013,"California","Monterey",0,0,0
+"06055",2013,"California","Napa",1,1,0
+"06057",2013,"California","Nevada",1,1,0
+"06059",2013,"California","Orange",1,1,0
+"06061",2013,"California","Placer",3,2,1
+"06063",2013,"California","Plumas",11,8,3
+"06065",2013,"California","Riverside",2,2,0
+"06067",2013,"California","Sacramento",5,5,0
+"06069",2013,"California","San Benito",0,0,0
+"06071",2013,"California","San Bernardino",1,1,0
+"06073",2013,"California","San Diego",0,0,0
+"06075",2013,"California","San Francisco",2,2,0
+"06077",2013,"California","San Joaquin",16,13,3
+"06079",2013,"California","San Luis Obispo",0,0,0
+"06081",2013,"California","San Mateo",3,3,0
+"06083",2013,"California","Santa Barbara",0,0,0
+"06085",2013,"California","Santa Clara",1,1,0
+"06087",2013,"California","Santa Cruz",0,0,0
+"06089",2013,"California","Shasta",0,0,0
+"06093",2013,"California","Siskiyou",2,2,0
+"06095",2013,"California","Solano",8,8,0
+"06097",2013,"California","Sonoma",0,0,0
+"06099",2013,"California","Stanislaus",39,25,14
+"06101",2013,"California","Sutter",2,2,0
+"06103",2013,"California","Tehama",0,0,0
+"06105",2013,"California","Trinity",13,12,1
+"06107",2013,"California","Tulare",34,23,11
+"06111",2013,"California","Ventura",0,0,0
+"06113",2013,"California","Yolo",0,0,0
+"06001",2012,"California","Alameda",0,0,0
+"06003",2012,"California","Alpine",1,1,0
+"06007",2012,"California","Butte",5,3,2
+"06009",2012,"California","Calaveras",0,0,0
+"06011",2012,"California","Colusa",4,1,3
+"06013",2012,"California","Contra Costa",0,0,0
+"06015",2012,"California","Del Norte",0,0,0
+"06017",2012,"California","El Dorado",0,0,0
+"06019",2012,"California","Fresno",14,12,2
+"06021",2012,"California","Glenn",1,1,0
+"06023",2012,"California","Humboldt",0,0,0
+"06025",2012,"California","Imperial",1,1,0
+"06027",2012,"California","Inyo",4,1,3
+"06029",2012,"California","Kern",13,11,2
+"06031",2012,"California","Kings",25,18,7
+"06033",2012,"California","Lake",0,0,0
+"06037",2012,"California","Los Angeles",2,2,0
+"06039",2012,"California","Madera",9,6,3
+"06041",2012,"California","Marin",0,0,0
+"06043",2012,"California","Mariposa",0,0,0
+"06045",2012,"California","Mendocino",0,0,0
+"06047",2012,"California","Merced",7,7,0
+"06051",2012,"California","Mono",0,0,0
+"06053",2012,"California","Monterey",0,0,0
+"06055",2012,"California","Napa",0,0,0
+"06057",2012,"California","Nevada",0,0,0
+"06059",2012,"California","Orange",3,2,1
+"06061",2012,"California","Placer",2,1,1
+"06063",2012,"California","Plumas",4,4,0
+"06065",2012,"California","Riverside",0,0,0
+"06067",2012,"California","Sacramento",1,1,0
+"06069",2012,"California","San Benito",0,0,0
+"06071",2012,"California","San Bernardino",0,0,0
+"06073",2012,"California","San Diego",1,1,0
+"06075",2012,"California","San Francisco",1,1,0
+"06077",2012,"California","San Joaquin",4,3,1
+"06079",2012,"California","San Luis Obispo",0,0,0
+"06081",2012,"California","San Mateo",0,0,0
+"06083",2012,"California","Santa Barbara",0,0,0
+"06085",2012,"California","Santa Clara",0,0,0
+"06087",2012,"California","Santa Cruz",0,0,0
+"06089",2012,"California","Shasta",0,0,0
+"06093",2012,"California","Siskiyou",2,0,2
+"06095",2012,"California","Solano",1,1,0
+"06097",2012,"California","Sonoma",0,0,0
+"06099",2012,"California","Stanislaus",17,14,3
+"06101",2012,"California","Sutter",2,2,0
+"06103",2012,"California","Tehama",3,3,0
+"06105",2012,"California","Trinity",26,18,8
+"06107",2012,"California","Tulare",16,11,5
+"06111",2012,"California","Ventura",0,0,0
+"06113",2012,"California","Yolo",0,0,0
+"06001",2011,"California","Alameda",2,2,0
+"06003",2011,"California","Alpine",0,0,0
+"06007",2011,"California","Butte",2,2,0
+"06009",2011,"California","Calaveras",0,0,0
+"06011",2011,"California","Colusa",0,0,0
+"06013",2011,"California","Contra Costa",2,2,0
+"06015",2011,"California","Del Norte",0,0,0
+"06017",2011,"California","El Dorado",0,0,0
+"06019",2011,"California","Fresno",23,14,9
+"06021",2011,"California","Glenn",1,1,0
+"06023",2011,"California","Humboldt",0,0,0
+"06025",2011,"California","Imperial",2,2,0
+"06027",2011,"California","Inyo",9,3,6
+"06029",2011,"California","Kern",9,8,1
+"06031",2011,"California","Kings",37,23,14
+"06033",2011,"California","Lake",0,0,0
+"06037",2011,"California","Los Angeles",3,3,0
+"06039",2011,"California","Madera",27,14,13
+"06041",2011,"California","Marin",1,1,0
+"06043",2011,"California","Mariposa",1,1,0
+"06045",2011,"California","Mendocino",0,0,0
+"06047",2011,"California","Merced",20,17,3
+"06051",2011,"California","Mono",0,0,0
+"06053",2011,"California","Monterey",0,0,0
+"06055",2011,"California","Napa",2,2,0
+"06057",2011,"California","Nevada",0,0,0
+"06059",2011,"California","Orange",3,3,0
+"06061",2011,"California","Placer",6,6,0
+"06063",2011,"California","Plumas",2,2,0
+"06065",2011,"California","Riverside",2,2,0
+"06067",2011,"California","Sacramento",13,10,3
+"06069",2011,"California","San Benito",0,0,0
+"06071",2011,"California","San Bernardino",19,19,0
+"06073",2011,"California","San Diego",1,1,0
+"06075",2011,"California","San Francisco",2,2,0
+"06077",2011,"California","San Joaquin",9,8,1
+"06079",2011,"California","San Luis Obispo",0,0,0
+"06081",2011,"California","San Mateo",1,1,0
+"06083",2011,"California","Santa Barbara",0,0,0
+"06085",2011,"California","Santa Clara",1,1,0
+"06087",2011,"California","Santa Cruz",0,0,0
+"06089",2011,"California","Shasta",1,0,1
+"06093",2011,"California","Siskiyou",0,0,0
+"06095",2011,"California","Solano",7,6,1
+"06097",2011,"California","Sonoma",0,0,0
+"06099",2011,"California","Stanislaus",29,17,12
+"06101",2011,"California","Sutter",8,7,1
+"06103",2011,"California","Tehama",1,1,0
+"06105",2011,"California","Trinity",22,20,2
+"06107",2011,"California","Tulare",27,21,6
+"06111",2011,"California","Ventura",0,0,0
+"06113",2011,"California","Yolo",5,5,0
+"06001",2010,"California","Alameda",0,0,0
+"06007",2010,"California","Butte",0,0,0
+"06009",2010,"California","Calaveras",0,0,0
+"06011",2010,"California","Colusa",0,0,0
+"06013",2010,"California","Contra Costa",2,2,0
+"06015",2010,"California","Del Norte",0,0,0
+"06017",2010,"California","El Dorado",0,0,0
+"06019",2010,"California","Fresno",6,5,1
+"06021",2010,"California","Glenn",0,0,0
+"06023",2010,"California","Humboldt",0,0,0
+"06025",2010,"California","Imperial",1,1,0
+"06027",2010,"California","Inyo",3,1,2
+"06029",2010,"California","Kern",14,13,1
+"06031",2010,"California","Kings",23,17,6
+"06033",2010,"California","Lake",0,0,0
+"06037",2010,"California","Los Angeles",0,0,0
+"06039",2010,"California","Madera",9,4,5
+"06041",2010,"California","Marin",2,2,0
+"06043",2010,"California","Mariposa",2,1,1
+"06045",2010,"California","Mendocino",0,0,0
+"06047",2010,"California","Merced",12,10,2
+"06051",2010,"California","Mono",0,0,0
+"06053",2010,"California","Monterey",0,0,0
+"06055",2010,"California","Napa",0,0,0
+"06057",2010,"California","Nevada",0,0,0
+"06059",2010,"California","Orange",1,1,0
+"06061",2010,"California","Placer",2,1,1
+"06063",2010,"California","Plumas",1,1,0
+"06065",2010,"California","Riverside",2,2,0
+"06067",2010,"California","Sacramento",2,2,0
+"06069",2010,"California","San Benito",0,0,0
+"06071",2010,"California","San Bernardino",1,1,0
+"06073",2010,"California","San Diego",0,0,0
+"06075",2010,"California","San Francisco",3,3,0
+"06077",2010,"California","San Joaquin",2,2,0
+"06079",2010,"California","San Luis Obispo",0,0,0
+"06081",2010,"California","San Mateo",1,1,0
+"06083",2010,"California","Santa Barbara",0,0,0
+"06085",2010,"California","Santa Clara",0,0,0
+"06087",2010,"California","Santa Cruz",0,0,0
+"06089",2010,"California","Shasta",1,1,0
+"06093",2010,"California","Siskiyou",0,0,0
+"06095",2010,"California","Solano",0,0,0
+"06097",2010,"California","Sonoma",0,0,0
+"06099",2010,"California","Stanislaus",16,14,2
+"06101",2010,"California","Sutter",1,0,1
+"06103",2010,"California","Tehama",0,0,0
+"06105",2010,"California","Trinity",0,0,0
+"06107",2010,"California","Tulare",8,7,1
+"06111",2010,"California","Ventura",0,0,0
+"06113",2010,"California","Yolo",1,1,0
